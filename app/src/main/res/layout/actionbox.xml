@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton"
+            android:background="@drawable/ava1"
+            android:layout_gravity="center"
+            android:onClick="profileKaan" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Name"
+            android:id="@+id/txt_name"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:textColor="#010101" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="\@name"
+            android:id="@+id/txt_idname"
+            android:layout_alignBottom="@+id/txt_name"
+            android:layout_toRightOf="@+id/txt_name"
+            android:layout_toEndOf="@+id/txt_name"
+            android:layout_marginLeft="10dp"
+            android:textColor="#5f5f5f" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="text"
+            android:id="@+id/txt_message"
+            android:layout_below="@+id/txt_name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#010001" />
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/imgbtn_fav"
+            android:background="@drawable/fav"
+            android:layout_marginRight="23dp"
+            android:layout_marginEnd="23dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="5dp" />
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/imgbtn_ret"
+            android:background="@drawable/retweet"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp" />
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/imgbtn_reply"
+            android:background="@drawable/reply"
+            android:layout_alignTop="@+id/imgbtn_ret"
+            android:layout_toRightOf="@+id/txt_message"
+            android:layout_toEndOf="@+id/txt_message" />
+    </RelativeLayout>
+
+</LinearLayout>
